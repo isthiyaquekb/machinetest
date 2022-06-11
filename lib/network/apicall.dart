@@ -32,8 +32,6 @@ class APICall{
         );
       }
     }catch (e) {
-      print('UNEXPECTED ERROR');
-      print(e.toString());
       return HTTPResponse<List<Post>>(
         false,
         null,

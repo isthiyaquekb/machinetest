@@ -1,5 +1,4 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:machine_test/network/apicall.dart';
 import 'package:machine_test/provider/homepageprovider.dart';
@@ -14,7 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  GlobalKey<ScaffoldState> _globalKey = GlobalKey();
 
   @override
   void initState() {
@@ -30,14 +28,13 @@ class _HomePageState extends State<HomePage> {
       if (postResponse.data!.isNotEmpty) {
         provider.setPostsList(postResponse.data!, notify: false);
         provider.setIsHomePageProcessing(false);
-        print("LIST IS:${postResponse.data!.first.title}\n");
       }
     } else {
       provider.setIsHomePageProcessing(false);
       SnackBar(
         content: Text(
           postResponse.message.toString(),
-          style: TextStyle(color: Colors.black),
+          style: const TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.red,
       );
@@ -49,16 +46,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Home"),
+        title: const Text("Home"),
         actions: [
           Padding(
-              padding: EdgeInsets.only(right: 20.0),
+              padding: const EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => SettingPage()));
+                      MaterialPageRoute(builder: (context) => const SettingPage()));
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.settings,
                   size: 26.0,
                 ),
@@ -230,22 +227,22 @@ class _HomePageState extends State<HomePage> {
                             imageUrl: provider.postsList[index].image,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Text(
                           provider.postsList[index].title,
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
                               fontWeight: FontWeight.w600),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           children: [
-                            Text(
+                            const Text(
                               "price: ",
                               style: TextStyle(
                                   color: Colors.white,
@@ -254,7 +251,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                             Text(
                               "\$${provider.postsList[index].price.toString()}",
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600),
@@ -263,24 +260,24 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Text(
                           provider.postsList[index].category,
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
                               fontWeight: FontWeight.w400),
                         ),
                         Row(
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.star,
                               size: 18,
                               color: Colors.amber,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Text(
                               provider.postsList[index].rating.rate.toString(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600),

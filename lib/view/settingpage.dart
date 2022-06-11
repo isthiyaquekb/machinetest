@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 
 class SettingPage extends StatefulWidget{
+  const SettingPage({Key? key}) : super(key: key);
+
 
   @override
   _SettingPageState createState() => _SettingPageState();
@@ -117,8 +119,8 @@ class _SettingPageState extends State<SettingPage>{
                         decoration: BoxDecoration(
                             color: Colors.grey.shade300,
                             borderRadius: BorderRadius.circular(8),
-                            boxShadow: [
-                              const BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
+                            boxShadow: const [
+                              BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
                               BoxShadow(color:  Colors.white70,offset: Offset(-4,-4),blurRadius: 2,spreadRadius: 0.4),
                             ]
                         ),
@@ -201,11 +203,11 @@ class _SettingPageState extends State<SettingPage>{
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              const SizedBox(
+                            children: const [
+                              SizedBox(
                                 width: 20,
                               ),
-                              const Text(
+                              Text(
                                 "Order Updates",
                                 style: TextStyle(
                                     color: Colors.black,
@@ -220,8 +222,8 @@ class _SettingPageState extends State<SettingPage>{
                             decoration: BoxDecoration(
                                 color: Colors.grey.shade300,
                                 borderRadius: BorderRadius.circular(8),
-                                boxShadow: [
-                                  const BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
+                                boxShadow: const [
+                                  BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
                                   BoxShadow(color:  Colors.white70,offset: Offset(-4,-4),blurRadius: 2,spreadRadius: 0.4),
                                 ]
                             ),
@@ -254,11 +256,11 @@ class _SettingPageState extends State<SettingPage>{
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              const SizedBox(
+                            children: const [
+                              SizedBox(
                                 width: 20,
                               ),
-                              const Text(
+                              Text(
                                 "Shipping Updates",
                                 style: TextStyle(
                                     color: Colors.black,
@@ -273,8 +275,8 @@ class _SettingPageState extends State<SettingPage>{
                             decoration: BoxDecoration(
                                 color: Colors.grey.shade300,
                                 borderRadius: BorderRadius.circular(8),
-                                boxShadow: [
-                                  const BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
+                                boxShadow: const [
+                                  BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
                                   BoxShadow(color:  Colors.white70,offset: Offset(-4,-4),blurRadius: 2,spreadRadius: 0.4),
                                 ]
                             ),
@@ -307,11 +309,11 @@ class _SettingPageState extends State<SettingPage>{
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              const SizedBox(
+                            children: const [
+                              SizedBox(
                                 width: 20,
                               ),
-                              const Text(
+                              Text(
                                 "Promotions",
                                 style: TextStyle(
                                     color: Colors.black,
@@ -326,8 +328,8 @@ class _SettingPageState extends State<SettingPage>{
                             decoration: BoxDecoration(
                                 color: Colors.grey.shade300,
                                 borderRadius: BorderRadius.circular(8),
-                                boxShadow: [
-                                  const BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
+                                boxShadow: const [
+                                  BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
                                   BoxShadow(color:  Colors.white70,offset: Offset(-4,-4),blurRadius: 2,spreadRadius: 0.4),
                                 ]
                             ),
@@ -360,11 +362,11 @@ class _SettingPageState extends State<SettingPage>{
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              const SizedBox(
+                            children: const [
+                              SizedBox(
                                 width: 20,
                               ),
-                              const Text(
+                              Text(
                                 "Offers",
                                 style: TextStyle(
                                     color: Colors.black,
@@ -379,8 +381,8 @@ class _SettingPageState extends State<SettingPage>{
                             decoration: BoxDecoration(
                                 color: Colors.grey.shade300,
                                 borderRadius: BorderRadius.circular(8),
-                                boxShadow: [
-                                  const BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
+                                boxShadow: const [
+                                  BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
                                   BoxShadow(color:  Colors.white70,offset: Offset(-4,-4),blurRadius: 2,spreadRadius: 0.4),
                                 ]
                             ),
@@ -413,11 +415,11 @@ class _SettingPageState extends State<SettingPage>{
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              const SizedBox(
+                            children: const [
+                              SizedBox(
                                 width: 20,
                               ),
-                              const Text(
+                              Text(
                                 "News",
                                 style: TextStyle(
                                     color: Colors.black,
@@ -433,8 +435,8 @@ class _SettingPageState extends State<SettingPage>{
                             decoration: BoxDecoration(
                                 color: Colors.grey.shade300,
                                 borderRadius: BorderRadius.circular(8),
-                                boxShadow: [
-                                  const BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
+                                boxShadow: const [
+                                  BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
                                   BoxShadow(color:  Colors.white70,offset: Offset(-4,-4),blurRadius: 2,spreadRadius: 0.4),
                                 ]
                             ),
@@ -467,11 +469,11 @@ class _SettingPageState extends State<SettingPage>{
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              const SizedBox(
+                            children: const [
+                              SizedBox(
                                 width: 20,
                               ),
-                              const Text(
+                              Text(
                                 "Messages",
                                 style: TextStyle(
                                     color: Colors.black,
@@ -487,8 +489,8 @@ class _SettingPageState extends State<SettingPage>{
                             decoration: BoxDecoration(
                                 color: Colors.grey.shade300,
                                 borderRadius: BorderRadius.circular(8),
-                                boxShadow: [
-                                  const BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
+                                boxShadow: const [
+                                  BoxShadow(color: Colors.black12,offset: Offset(4,4),blurRadius: 2,spreadRadius: 0.4),
                                   BoxShadow(color:  Colors.white70,offset: Offset(-4,-4),blurRadius: 2,spreadRadius: 0.4),
                                 ]
                             ),
@@ -521,11 +523,11 @@ class _SettingPageState extends State<SettingPage>{
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              const SizedBox(
+                            children: const [
+                              SizedBox(
                                 width: 20,
                               ),
-                              const Text(
+                              Text(
                                 "New Arrivals",
                                 textAlign:TextAlign.left,
                                 style: TextStyle(
@@ -573,7 +575,7 @@ class _SettingPageState extends State<SettingPage>{
             const SizedBox(
               height: 30,
             ),
-            SizedBox(height: 5,),
+            const SizedBox(height: 5,),
             Padding(
               padding: const EdgeInsets.only(left: 32.0,right: 12.0),
               child: Row(
@@ -618,7 +620,7 @@ class _SettingPageState extends State<SettingPage>{
                 ],
               ),
             ),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Padding(
               padding: const EdgeInsets.only(left: 32.0,right: 12.0),
               child: Row(
